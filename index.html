@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="es">
+<head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KX76XF8R');</script>
+<!-- End Google Tag Manager -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Combinatoria algebraica</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Contar con álgebra: el anillo de series formales, el método simbólico, particiones y q-análogos, la enumeración de Pólya, funciones simétricas y de Schur, tablas de Young, RSK y la fórmula del gancho, la función de Möbius de un orden parcial, matroides y polinomios de grafos, con las demostraciones completas.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=JetBrains+Mono:wght@400;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400;1,8..60,600&display=swap">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KX76XF8R"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<div class="wrap" data-page="index">
+<header class="topbar"><a class="brand" href="index.html">Combinatoria <b>algebraica</b></a><span class="eyebrow">Curso visual e interactivo · Matemática</span><a class="al-sitio" href="https://aaramirez.github.io/">← Todos los cursos</a></header>
+<div class="layout">
+<nav class="toc" id="toc" aria-label="Ruta de aprendizaje"></nav>
+<main>
+
+<p class="aviso-curado" role="note">El material de Matemática está en proceso de curado: puede tener errores.</p>
+<header class="hero">
+  <span class="eyebrow">Curso visual e interactivo · Matemática</span>
+  <h1>Contar con estructuras: cuando una biyección vale más que una fórmula</h1>
+  <p class="lede">¿De cuántas formas se colorea un collar sin contar dos veces sus giros? ¿Por qué hay tantas particiones de un número en partes impares como en partes distintas? ¿Cuántas formas tiene de llenarse un diagrama de Young? La combinatoria algebraica responde con grupos, polinomios y matrices, y casi siempre con una biyección que se puede dibujar. Este curso la recorre de las series formales a las tablas de Young, los órdenes parciales y los matroides, con laboratorios donde las cajas se deslizan, los ganchos se cuentan y las biyecciones corren paso a paso.</p>
+</header>
+
+<section>
+  <h2>Cómo usar este curso</h2>
+  <div class="prose">
+    <p><b>Estado.</b> El curso está en preparación. La <a href="temario.html">tabla de contenido</a> ya tiene los 12 capítulos con sus secciones y sus laboratorios, y está en revisión.</p>
+    <p><b>Para quién es.</b> Para quien ya hizo Matemáticas discretas (conteo, inclusión-exclusión, recurrencias, funciones generadoras básicas, órdenes parciales y grafos), Álgebra abstracta (grupos, acciones, el lema de Burnside, anillos de polinomios) y Álgebra lineal (matrices, determinantes, espacios vectoriales). Las funciones generadoras como herramienta para recurrencias no se repiten: aquí se estudian como álgebra.</p>
+    <p><b>Cómo está hecho.</b> Un objeto recorre el curso: el diagrama de Young, una escalera de cajas. Primero cuenta particiones, después guarda simetrías de polinomios, luego se llena de números en las tablas y al final aparece como un orden parcial. Cada teorema viene con su biyección o su involución dibujada, y los laboratorios dejan arrastrar cajas, deslizar entradas, colorear collares, contraer aristas y ver una identidad volverse una correspondencia uno a uno. Las prácticas usan Python con SymPy y NetworkX, y SageMath en el navegador cuando hace falta. Es un curso de cierre: no habilita otros nodos del grafo.</p>
+  </div>
+</section>
+
+<details class="stage" id="temario" open><summary><h2><span class="pn">Empieza aquí</span> Tabla de contenido</h2></summary>
+  <div class="mods">
+    <a class="mod" href="temario.html"><span class="n">≡</span><b>Tabla de contenido</b><p>Cada capítulo con sus secciones y sus laboratorios.</p></a>
+  </div>
+</details>
+
+<details class="stage" id="parte-1" open><summary><h2><span class="pn">Parte 1</span> Series formales y el método simbólico</h2><span class="cuenta" data-etapa-cuenta="1"></span></summary>
+  <div class="mods">
+    <div class="mod soon" data-id="series-formales"><span class="n">01</span><b>El anillo de las series formales de potencias</b><p>K[[x]] como anillo: inversos, composición, derivada, logaritmo y exponencial formales, y la inversión de Lagrange.</p></div>
+    <div class="mod soon" data-id="metodo-simbolico"><span class="n">02</span><b>El método simbólico: clases combinatorias y funciones generatrices</b><p>Traducir construcciones (sumas, productos, sucesiones, conjuntos, ciclos) en operaciones sobre series ordinarias y exponenciales.</p></div>
+    <div class="mod soon" data-id="generatrices-racionales-y-algebraicas"><span class="n">03</span><b>Funciones generatrices racionales, algebraicas y D-finitas</b><p>Las tres familias de funciones generatrices, el método de la matriz de transferencia y una primera mirada a las asintóticas desde las singularidades.</p></div>
+  </div>
+</details>
+
+<details class="stage" id="parte-2" open><summary><h2><span class="pn">Parte 2</span> Particiones</h2><span class="cuenta" data-etapa-cuenta="2"></span></summary>
+  <div class="mods">
+    <div class="mod soon" data-id="particiones"><span class="n">04</span><b>Particiones y diagramas de Young</b><p>Las particiones de un entero, su diagrama, la conjugación y las grandes identidades de Euler, Franklin y Jacobi.</p></div>
+    <div class="mod soon" data-id="q-analogos"><span class="n">05</span><b>q-análogos: coeficientes gaussianos y conteos con peso</b><p>Los coeficientes binomiales con un parámetro q que cuentan subespacios, particiones en una caja e inversiones.</p></div>
+  </div>
+</details>
+
+<details class="stage" id="parte-3" open><summary><h2><span class="pn">Parte 3</span> Simetría</h2><span class="cuenta" data-etapa-cuenta="3"></span></summary>
+  <div class="mods">
+    <div class="mod soon" data-id="enumeracion-de-polya"><span class="n">06</span><b>Acciones de grupos y la enumeración de Pólya</b><p>El índice de ciclos de una acción, el teorema de Pólya y los conteos salvo simetría de collares, grafos y moléculas.</p></div>
+    <div class="mod soon" data-id="funciones-simetricas"><span class="n">07</span><b>Funciones simétricas</b><p>El anillo de las funciones simétricas, sus bases (monomiales, elementales, completas, de potencias), el teorema fundamental y las identidades de Newton.</p></div>
+    <div class="mod soon" data-id="funciones-de-schur"><span class="n">08</span><b>Tablas de Young y funciones de Schur</b><p>Las tablas semiestándar, las funciones de Schur, la regla de Jacobi-Trudi con caminos que no se cruzan y la regla de Littlewood-Richardson.</p></div>
+    <div class="mod soon" data-id="rsk"><span class="n">09</span><b>La correspondencia RSK y la fórmula del gancho</b><p>Una biyección entre permutaciones y pares de tablas, el teorema de Schensted sobre subsucesiones crecientes y la fórmula del gancho.</p></div>
+  </div>
+</details>
+
+<details class="stage" id="parte-4" open><summary><h2><span class="pn">Parte 4</span> Órdenes, matroides y grafos</h2><span class="cuenta" data-etapa-cuenta="4"></span></summary>
+  <div class="mods">
+    <div class="mod soon" data-id="posets-y-moebius"><span class="n">10</span><b>Conjuntos parcialmente ordenados y la función de Möbius</b><p>El álgebra de incidencia de un orden parcial, la función de Möbius, la inversión que generaliza la inclusión-exclusión y los retículos geométricos.</p></div>
+    <div class="mod soon" data-id="matroides"><span class="n">11</span><b>Matroides</b><p>La independencia abstracta: axiomas, rango, circuitos y bases, el teorema del algoritmo voraz, la dualidad y los matroides representables.</p></div>
+    <div class="mod soon" data-id="polinomios-de-grafos"><span class="n">12</span><b>Polinomios de grafos: cromático y de Tutte</b><p>El polinomio cromático, borrar y contraer, el teorema de Stanley sobre orientaciones acíclicas y el polinomio de Tutte como invariante universal.</p></div>
+  </div>
+</details>
+
+
+
+<nav class="pager" id="pager" aria-label="Capítulo anterior y siguiente"></nav>
+</main>
+</div>
+<footer><span>Curso abierto de aaramirez.github.io.</span><span>Sitio publicado: <a href="https://github.com/aaramirez/mate-combinatoria-algebraica" target="_blank" rel="noopener">github.com/aaramirez/mate-combinatoria-algebraica</a></span></footer>
+</div>
+<script src="assets/lab.js"></script>
+</body>
+</html>
